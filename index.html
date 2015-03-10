@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Grant Glennie</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <!-- THINGS TO ASK -
+        		-About me section, needs more content?
+                -missing game design
+                -footer links
+                -broken on lukes for or some shit
+                - GIT HUB REPOSITORY?!?!?!?!
+        -->
+<div id="wholepage">
+  <header>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <a href="javascript:scrollToElement('mainContent');">
+          <li class="trans">
+            <p class="trans">Work</p>
+          </li>
+          </a> <a href="javascript:scrollToElement('bio');">
+          <li class="trans">
+            <p class="trans">About</p>
+          </li>
+          </a> <a href="javascript:scrollToElement('footerContainer');">
+          <li class="trans">
+            <p class="trans">Contact</p>
+          </li>
+          </a>
+        </ul>
+      </nav>
+      <div id="logo">
+        <h1>Grant Glennie</h1>
+      </div>
+    </div>
+  </header>
+  <div id="content">
+    <div id="blankSpace">
+      <h2>G'day mate, I'm Grant and i like to build websites</h2>
+      <p>Layed back, casual Aussie bloke keen on getting 
+      some experience with clients and in the industry</p>
+      <div id="socialMedia">
+        <div class="wrapper">
+        <a href="https://www.facebook.com/" target="_blank" id="facebookLink">Facebook </a> 
+        <a href="https://twitter.com/GlennieGrant" target="_blank" id="twitterLink">Twitter </a> 
+        <a href="https://github.com/g3ck05" target="_blank" id="githubLink">Git hub </a>
+        <a href="https://uk.linkedin.com/in/GrantGlennie" target="_blank" id="linkedLink">Linked in </a>
+        </div>
+      </div>
+    </div>
+    <div id="mainContent">
+      <div id="work">
+        <h2>Portfolio</h2>
+        <div id="car1" class="carasol trans" style="height:450px;">
+          <div class="carHeading" onClick="javascript:openCar('car1');">
+            <h3>Websites</h3>
+            <p>A few websites i have made for personal projects and for assignment pieces during university</p>
+          </div>
+          <div class="leftArrow" onClick="javascript:workSlider('left','1');"></div>
+          <div class="rightArrow" onClick="javascript:workSlider('right','1');"></div>
+          <div id="C1" class="carCont trans5"> 
+          <img src="img/the569th.jpg" id="work1" class="trans5" width="50%" height="100%" alt="the 569th"> 
+          <img src="img/catPalace.jpg" id="work2" class="trans5" width="50%" height="100%" alt="Cat Palace">
+          <div id="hoverLink"><a id="hoverLinkA" href="/569/" target="_blank">Go To This Site</a></div> 
+          </div>
+        </div>
+        <div id="car2" class="carasol trans">
+          <div class="carHeading" onClick="javascript:openCar('car2');">
+            <h3>Java Programs</h3>
+            <p>A couple of java programs i coded for an assignment at university</p>
+          </div>
+          <div class="leftArrow" onClick="javascript:workSlider('left','3');"></div>
+          <div class="rightArrow" onClick="javascript:workSlider('right','3');"></div>
+          <div id="C2" class="carCont trans5"> 
+          <img src="img/OOP2.PNG" id="work3" class="trans5" width="25%" height="100%" alt="OOP project 2">
+          <img src="img/OOP1.PNG" id="work4" class="trans5" width="25%" height="100%" alt="OOP project 1">
+          </div>
+        </div>
+      <div id="car3" class="carasol trans" onClick="javascript:openCar('car3');">
+        <div class="carHeading">
+          <h3>Basic Games Design</h3>
+          <p>A basic game i designed while at university</p>
+        </div>
+        <div id="C3" class="carCont">
+        <p>Game still in design</p>
+        </div>
+      </div>
+    </div>
+    <div id="bio">
+      <h2>About Me</h2>
+      <div id="dp"></div>
+      <p>I am a very physically active person, I train in the gym quite frequently. 
+      I enjoy doing all types of sports especially motocross.</p>
+      <p id="skillz">My Skills</p><div id="skillText">
+      <p>Web Design <img src="img/tick.png" height="30px" width="30px"></p>
+      <p>HTML <img src="img/tick.png" height="30px" width="30px"></p>
+      <p>CSS <img src="img/tick.png" height="30px" width="30px"></p>
+      <p>Javascript <img src="img/tick.png" height="30px" width="30px"></p>
+      <p>PHP <img src="img/tick.png" height="30px" width="30px"></p>
+      <p>SQL <img src="img/tick.png" height="30px" width="30px"></p>
+      <p>Databasing <img src="img/tick.png" height="30px" width="30px"></p>
+      </div>  
+    </div>
+    <div id="contact">
+    <h2>Contact Me</h2>
+    <p>Ask a question, give feedback or hire me?</p>
+    <form action="email.php" method="post">
+    Email: <input type="email" id="cEmail" name="Email"/><br>
+    Name: <input type="text" id="cName" name="Name"/><br>
+    <p id="cMessageLabel">Message: </p><textarea id="cMessage" name="Message"></textarea><br>
+   	<input type="submit" id="cSub" value="Send!"/>
+    </form>
+    </div>
+  </div>
+</div>
+</div>
+<div id="footerContainer">
+  <footer>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of service</a>
+  </footer>
+</div>
+<div id="popout" onMouseOver="javascript:popoutHover();" onMouseOut="javascript:popoutOut();"> <a id="l4" class="popLink trans" href="javascript:scrollToElement('footerContainer');">
+  <p class="trans">Contact</p>
+  </a> <a id="l3" class="popLink trans" href="javascript:scrollToElement('bio');">
+  <p class="trans">About</p>
+  </a> <a id="l2" class="popLink trans" href="javascript:scrollToElement('mainContent');">
+  <p class="trans">Work</p>
+  </a> <a id="l1" class="popLink trans" href="javascript:scrollToElement('wholepage');">
+  <p class="trans">Home</p>
+  </a> </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> 
+<script src="js/plugins.js"></script> 
+<script src="js/main.js"></script> 
+<script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-39573524-2','auto');ga('send','pageview');
+        </script>
+</body>
+</html>
